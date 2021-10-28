@@ -1,0 +1,17 @@
+G:\projects\mooc\seckill-system\seckill\src\main\java\com\seckill\response\CommonReturnType.java
+G:\projects\mooc\seckill-system\seckill\src\main\java\com\seckill\service\UserService.java
+G:\projects\mooc\seckill-system\seckill\src\main\java\com\seckill\App.java
+G:\projects\mooc\seckill-system\seckill\src\main\java\com\seckill\controller\viewobject\UserVO.java
+G:\projects\mooc\seckill-system\seckill\src\main\java\com\seckill\dataobject\UserPasswordDO.java
+G:\projects\mooc\seckill-system\seckill\src\main\java\com\seckill\service\impl\UserServiceImpl.java
+G:\projects\mooc\seckill-system\seckill\src\main\java\com\seckill\dao\UserPasswordDOMapper.java
+G:\projects\mooc\seckill-system\seckill\src\main\java\com\seckill\error\CommonError.java
+G:\projects\mooc\seckill-system\seckill\src\main\java\com\seckill\validator\ValidationResult.java
+G:\projects\mooc\seckill-system\seckill\src\main\java\com\seckill\dataobject\UserDO.java
+G:\projects\mooc\seckill-system\seckill\src\main\java\com\seckill\error\BusinessException.java
+G:\projects\mooc\seckill-system\seckill\src\main\java\com\seckill\service\model\UserModel.java
+G:\projects\mooc\seckill-system\seckill\src\main\java\com\seckill\error\EmBusinessError.java
+G:\projects\mooc\seckill-system\seckill\src\main\java\com\seckill\validator\ValidatorImpl.java
+G:\projects\mooc\seckill-system\seckill\src\main\java\com\seckill\controller\BaseController.java
+G:\projects\mooc\seckill-system\seckill\src\main\java\com\seckill\controller\UserController.java
+G:\projects\mooc\seckill-system\seckill\src\main\java\com\seckill\dao\UserDOMapper.java

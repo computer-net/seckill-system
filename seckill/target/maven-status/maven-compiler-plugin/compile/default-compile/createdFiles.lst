@@ -1,0 +1,17 @@
+com\seckill\error\BusinessException.class
+com\seckill\response\CommonReturnType.class
+com\seckill\error\EmBusinessError.class
+com\seckill\App.class
+com\seckill\validator\ValidationResult.class
+com\seckill\dao\UserPasswordDOMapper.class
+com\seckill\controller\UserController.class
+com\seckill\dataobject\UserDO.class
+com\seckill\error\CommonError.class
+com\seckill\controller\BaseController.class
+com\seckill\controller\viewobject\UserVO.class
+com\seckill\service\UserService.class
+com\seckill\service\impl\UserServiceImpl.class
+com\seckill\dao\UserDOMapper.class
+com\seckill\dataobject\UserPasswordDO.class
+com\seckill\validator\ValidatorImpl.class
+com\seckill\service\model\UserModel.class

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="static/assets/global/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="static/assets/global/css/components.css">
+	<link rel="stylesheet" type="text/css" href="static/assets/admin/pages/css/login.css">
+	<script type="text/javascript" src="static/assets/global/plugins/jquery-1.11.0.min.js"></script>
+	<title>用户注册</title>
+</head>
+<body class="login">
+	<div class="content">
+		<h3 class="form-title">用户登陆</h3>
+		<div class="form-group">
+			<label class="control-label">手机号</label>
+			<div>
+				<input class="form-control" type="text" placeholder="手机号" name="telephone" id="telephone">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label">密码</label>
+			<div>
+				<input class="form-control" type="password" placeholder="密码" name="password" id="password">
+			</div>
+		</div>
+		<div class="form-actions">
+			<button class="btn blue" id="login" type="submit">
+				登陆
+			</button>
+			<button class="btn blue" id="register" type="submit">
+				注册
+			</button>
+		</div>
+	</div>
+</body>
+
+<script type="text/javascript">
+	jQuery(document).ready(function() {
+		// 绑定opt的click事件，用于向后端发送获取手机验证码的请求
+
+		$("#register").on("click", function(){
+			window.location.href="getopt.html";
+		});
+
+		$("#login").on("click", function(){
+			var telephone = $("#telephone").val();
+			var password = $("#password").val();
+			if (telephone == null || telephone == "") {
+				alert("手机号不能为空");
+				return false;
+			}
+			if (password == null || password == "") {
+				alert("密码不能为空");
+				return false;
+			}
+			$.ajax({
+				type: "POST",
+				contentType: "application/x-www-form-urlencoded",
+				url: "http://localhost:8090/user/login",
+				data: {
+					"telephone": telephone,
+					"password": password,
+				},
+				xhrFields: {
+	                withCredentials: true
+	            },
+	            crossDomain: true,
+				success: function(data) {
+					if (data.status == "success") {
+						alert("登陆成功");
+						window.location.href = "list-item.html";
+					} else {
+						alert("登陆失败，原因为： " + data.data.errMsg);
+					}
+				},
+				error: function(data) {
+					alert("登陆失败，原因为： " + data.data.errMsg);
+				}
+			})
+			return false;
+		})
+	});
+</script>
+
+</html>
